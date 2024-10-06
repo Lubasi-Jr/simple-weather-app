@@ -50,6 +50,8 @@ app.post("/search", async (req, res) => {
 
     // Output the retrieved values
     console.log(weather);
+    console.log(response);
+
     res.render("index.ejs", { weather: weather });
   } catch (err) {
     const errorMessage = "Sorry, city does not exist";
